@@ -1,0 +1,63 @@
+2023-03-15T10:27:05.260+05:30  INFO 5464 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-03-15T10:27:05.293+05:30  INFO 5464 --- [Thread-80] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-15T10:27:05.294+05:30  INFO 5464 --- [Thread-80] o.a.c.c.C.[Tomcat-3].[localhost].[/api]  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-15T10:27:05.298+05:30  WARN 5464 --- [Thread-80] o.a.c.loader.WebappClassLoaderBase       : The web application [api] appears to have started a thread named [HikariPool-21 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-03-15T10:27:05.302+05:30  INFO 5464 --- [Thread-80] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15T10:27:05.304+05:30  INFO 5464 --- [Thread-80] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2023-03-15T10:27:05.307+05:30  INFO 5464 --- [Thread-80] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2023-03-15T10:27:05.471+05:30  INFO 5464 --- [restartedMain] c.application.HealthBridgeApplication    : Starting HealthBridgeApplication using Java 17.0.6 with PID 5464 (C:\Users\SUMERK\Downloads\HealthBridge\HealthBridge1\target\classes started by sumerk in C:\Users\SUMERK\Downloads\HealthBridge\HealthBridge1)
+2023-03-15T10:27:05.471+05:30  INFO 5464 --- [restartedMain] c.application.HealthBridgeApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-03-15T10:27:05.694+05:30  INFO 5464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15T10:27:05.729+05:30  INFO 5464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2023-03-15T10:27:05.814+05:30  INFO 5464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15T10:27:05.815+05:30  INFO 5464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15T10:27:05.815+05:30  INFO 5464 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-15T10:27:05.846+05:30  INFO 5464 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2023-03-15T10:27:05.846+05:30  INFO 5464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2023-03-15T10:27:05.875+05:30  INFO 5464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15T10:27:05.884+05:30  INFO 5464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2023-03-15T10:27:05.884+05:30  WARN 5464 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-15T10:27:05.890+05:30  INFO 5464 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@531c97df
+2023-03-15T10:27:05.890+05:30  INFO 5464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2023-03-15T10:27:05.890+05:30  WARN 5464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.0.0 version for [org.hibernate.dialect.MySQL5Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-03-15T10:27:05.890+05:30  INFO 5464 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-03-15T10:27:05.891+05:30  WARN 5464 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-15T10:28:14.683+05:30  INFO 3468 --- [restartedMain] c.application.HealthBridgeApplication    : Starting HealthBridgeApplication using Java 17.0.6 with PID 3468 (C:\Users\SUMERK\Downloads\HealthBridge\HealthBridge1\target\classes started by sumerk in C:\Users\SUMERK\Downloads\HealthBridge\HealthBridge1)
+2023-03-15T10:28:14.687+05:30  INFO 3468 --- [restartedMain] c.application.HealthBridgeApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-03-15T10:28:14.771+05:30  INFO 3468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-15T10:28:14.772+05:30  INFO 3468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-15T10:28:15.838+05:30  INFO 3468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15T10:28:15.997+05:30  INFO 3468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 6 JPA repository interfaces.
+2023-03-15T10:28:17.172+05:30  INFO 3468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15T10:28:17.190+05:30  INFO 3468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15T10:28:17.190+05:30  INFO 3468 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-15T10:28:17.304+05:30  INFO 3468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2023-03-15T10:28:17.305+05:30  INFO 3468 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2531 ms
+2023-03-15T10:28:17.503+05:30  INFO 3468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15T10:28:17.588+05:30  INFO 3468 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-15T10:28:17.987+05:30  INFO 3468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15T10:28:17.994+05:30  WARN 3468 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-15T10:28:18.191+05:30  INFO 3468 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10bf7fe3
+2023-03-15T10:28:18.194+05:30  INFO 3468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15T10:28:18.215+05:30  WARN 3468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.0.0 version for [org.hibernate.dialect.MySQL5Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-03-15T10:28:18.218+05:30  INFO 3468 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-03-15T10:28:18.221+05:30  WARN 3468 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-15T10:28:19.933+05:30  INFO 3468 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15T10:28:19.943+05:30  INFO 3468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15T10:28:21.355+05:30  WARN 3468 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15T10:28:21.622+05:30  INFO 3468 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25353848, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7519d556, org.springframework.security.web.context.SecurityContextHolderFilter@7b1834c6, org.springframework.security.web.header.HeaderWriterFilter@6cfb8cc1, org.springframework.security.web.authentication.logout.LogoutFilter@4b78346e, com.application.config.JwtAuthenticationFilter@5e1b1a4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b169b37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12832a0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dfdd38, org.springframework.security.web.session.SessionManagementFilter@4cd7279f, org.springframework.security.web.access.ExceptionTranslationFilter@5b59e911, org.springframework.security.web.access.intercept.AuthorizationFilter@7b156d3d]
+2023-03-15T10:28:22.013+05:30  INFO 3468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-15T10:28:22.095+05:30  INFO 3468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2023-03-15T10:28:22.112+05:30  INFO 3468 --- [restartedMain] c.application.HealthBridgeApplication    : Started HealthBridgeApplication in 8.022 seconds (process running for 9.011)
+2023-03-15T10:29:13.577+05:30  INFO 3468 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15T10:29:13.577+05:30  INFO 3468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15T10:29:13.580+05:30  INFO 3468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
