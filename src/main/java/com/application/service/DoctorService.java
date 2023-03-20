@@ -14,6 +14,6 @@ public interface DoctorService {
     List<Appointment> getAppointmentsByDoctorId(int doctorId);
 	Doctor updateDoctor(int id, Doctor doctor);
 	Doctor findDoctorByUserId(int userId);
-	 List<Doctor> findBySpeciality(String Speciality);
+	List<Doctor> findBySpeciality(String Speciality);
    
 }

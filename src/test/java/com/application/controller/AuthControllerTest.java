@@ -1,5 +1,4 @@
 package com.application.controller;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,7 +22,6 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import com.application.config.JwtTokenHelper;
-import com.application.controller.AuthController;
 import com.application.exception.ApiException;
 import com.application.model.User;
 import com.application.payload.JwtAuthRequest;
@@ -115,6 +113,7 @@ public class AuthControllerTest {
         Principal principal = Mockito.mock(Principal.class);
         User user = new User();
         user.setEmail("testuser@test.com");
+        
         Mockito.when(userRepo.findByEmail(Mockito.anyString())).thenReturn(Optional.of(user));
 
         // Act
